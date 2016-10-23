@@ -1,0 +1,121 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Nikhil D'Souza</title>
+    <meta name="description" content="The HTML5 Herald">
+    <meta name="author" content="SitePoint">
+
+    <link rel="stylesheet" href="css/main.css">
+    <link href="css/hover.css" rel="stylesheet" media="all">
+    <link href="css/onepage-scroll.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
+    <script type="text/javascript" src="js/jquery.onepage-scroll.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            $(".main").onepage_scroll({
+                sectionContainer: "section",
+                animationTime: 750,
+                loop: false,
+                keyboard: true,
+                responsiveFallback: false
+            });
+
+            var a = document.getElementById("next");
+            a.onclick = function() {
+                $(".main").moveTo(2);
+                return false;
+            }
+        });
+    </script>
+</head>
+
+<body>
+
+    <div class="main onepage-wrapper">
+        <section class="intro section vertical-center">
+            <h1>NIKHIL D'SOUZA.</h1>
+            <div class="arrow">
+                <a href="#2" id="next" class="svg hvr-float">
+                    <object class="arrow-svg" data="img/arrow.svg"></object>
+                </a>
+            </div>
+        </section>
+
+        <section class="about section vertical-center">
+            <div>
+                <b class="heading1"># About Me</b>
+                <br><br> <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lobortis eros id consequat consectetur. Nullam non leo orci. Integer eu convallis risus, sit amet ullamcorper dolor. Nullam enim sem, sagittis non nisi ut, bibendum
+                commodo turpis. Sed diam augue, laoreet ut cursus vitae, condimentum ac dui. Sed at sem pulvinar ligula scelerisque mattis a in eros. Pellentesque placerat purus leo, quis dapibus enim lobortis a. Curabitur blandit mauris non mi tincidunt
+                semper. Aenean placerat turpis a nulla lacinia lobortis. Praesent lobortis vitae velit at consequat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur mollis ipsum sed tortor rutrum,
+                quis tristique enim ultrices.</p>
+            </div>
+        </section>
+
+        <section class="projects section vertical-center">
+            <div>
+                <b class="heading1"># Projects</b>
+                <br><br>
+                <ul class="dashed">
+                    <li>Pugi Blog<p class="description">: a tech blog</p></li>
+                    <li>Wolly<p class="description">: the new definition of volunteering</p></li>
+                    <li>Prioritize<p class="description">: a utility to organize tasks</p></li>
+                    <li>Help Nepal<p class="description">: help the victims of the earthquake</p></li>
+                    <li>WWDC Scholars<p class="description">: WWDC scholarship winners</p></li>
+                    <li>Hack Chair<p class="description">: we hacked a chair</p></li>
+                    <li>Measuring Brainwaves<p class="description">: the next dimension of technology</p></li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="blog section vertical-center">
+            <div>
+                <b class="heading1"># Latest Blog Posts</b>
+                <p>from <a href="https://pugiblog.com" target="_blank">Pugi Blog →</a></p>
+                <br><br>
+
+                <b class="heading2">## AAR Final Wrap-Up</b>
+                <p class="description">Several months ago, I decided to take a class that would change my perception on technology and the human brain. After months of hard work and dedication, I finally finished my project. The ability to display brainwave data on a smartphone.</p>
+                <br><br>
+
+                <b class="heading2">## Logitech MX Master Review</b>
+                <p class="description">A few months ago, Logitech added a new mouse to their MX series. The Logitech MX Master. This advanced mouse packs several new features that makes this one of the best mice on the market.</p>
+                <br><br>
+
+                <b class="heading2">## What is a Raspberry Pi?</b>
+                <p class="description">In today’s market a decent laptop or desktop costs around $1000. But there is a computer for only $30! A Raspberry Pi is a small computer that is the size of a credit card.</p>
+            </div>
+        </section>
+
+        <section class="contact section vertical-center">
+            <p>
+                <div class="media">
+                    <a href="https://www.linkedin.com/in/nikhiljay7" target="_blank"><i class="fa fa-linkedin"></i></a>
+                    <a href="https://github.com/nikhiljay" target="_blank"><i class="fa fa-github"></i></a>
+                    <a href="mailto:nikhil@nikhiljay.com"><i class="fa fa-envelope"></i></a>
+                    <a href="https://twitter.com/nikhiljay7" target="_blank"><i class="fa fa-twitter"></i></a>
+                </div>
+
+
+            </p>
+            <div class="copyright">
+                <p>
+                    ©
+                    <script>
+                        document.write(new Date().getFullYear())
+                    </script>, made with <i style="color: red" class="fa fa-heart"></i> by Nikhil D'Souza.
+                </p>
+            </div>
+        </section>
+    </div>
+
+</body>
+
+</html>
