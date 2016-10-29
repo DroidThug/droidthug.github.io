@@ -14,9 +14,11 @@
     <link href="css/onepage-scroll.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vivus/0.4.0/vivus.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
     <script type="text/javascript" src="js/jquery.onepage-scroll.js"></script>
+    <script type="text/javascript" src="js/snap.svg.js"></script>
 
     <script>
         $(document).ready(function() {
@@ -41,7 +43,11 @@
 
     <div class="main onepage-wrapper">
         <section class="intro section vertical-center">
-            <h1>NIKHIL D'SOUZA.</h1>
+            <h1 class="title">NIKHIL D'SOUZA.</h1>
+            <svg id="rectangle"></svg>
+            <svg id="circle"></svg>
+            <svg id="line"></svg>
+            <svg id="text"></svg>
             <div class="arrow">
                 <a href="#2" id="next" class="svg hvr-float">
                     <object class="arrow-svg" data="img/arrow.svg"></object>
@@ -52,10 +58,11 @@
         <section class="about section vertical-center">
             <div>
                 <b class="heading1"># About Me</b>
-                <br><br> <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lobortis eros id consequat consectetur. Nullam non leo orci. Integer eu convallis risus, sit amet ullamcorper dolor. Nullam enim sem, sagittis non nisi ut, bibendum
-                commodo turpis. Sed diam augue, laoreet ut cursus vitae, condimentum ac dui. Sed at sem pulvinar ligula scelerisque mattis a in eros. Pellentesque placerat purus leo, quis dapibus enim lobortis a. Curabitur blandit mauris non mi tincidunt
-                semper. Aenean placerat turpis a nulla lacinia lobortis. Praesent lobortis vitae velit at consequat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur mollis ipsum sed tortor rutrum,
-                quis tristique enim ultrices.</p>
+                <br><br>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lobortis eros id consequat consectetur. Nullam non leo orci. Integer eu convallis risus, sit amet ullamcorper dolor. Nullam enim sem, sagittis non nisi ut, bibendum commodo
+                    turpis. Sed diam augue, laoreet ut cursus vitae, condimentum ac dui. Sed at sem pulvinar ligula scelerisque mattis a in eros. Pellentesque placerat purus leo, quis dapibus enim lobortis a. Curabitur blandit mauris non mi tincidunt
+                    semper. Aenean placerat turpis a nulla lacinia lobortis. Praesent lobortis vitae velit at consequat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur mollis ipsum sed tortor rutrum,
+                    quis tristique enim ultrices.</p>
             </div>
         </section>
 
@@ -64,13 +71,27 @@
                 <b class="heading1"># Projects</b>
                 <br><br>
                 <ul class="dashed">
-                    <li>Pugi Blog<p class="description">: a tech blog</p></li>
-                    <li>Wolly<p class="description">: the new definition of volunteering</p></li>
-                    <li>Prioritize<p class="description">: a utility to organize tasks</p></li>
-                    <li>Help Nepal<p class="description">: help the victims of the earthquake</p></li>
-                    <li>WWDC Scholars<p class="description">: WWDC scholarship winners</p></li>
-                    <li>Hack Chair<p class="description">: we hacked a chair</p></li>
-                    <li>Measuring Brainwaves<p class="description">: the next dimension of technology</p></li>
+                    <li>Pugi Blog
+                        <p class="description">: a tech blog</p>
+                    </li>
+                    <li>Wolly
+                        <p class="description">: the new definition of volunteering</p>
+                    </li>
+                    <li>Prioritize
+                        <p class="description">: a utility to organize tasks</p>
+                    </li>
+                    <li>Help Nepal
+                        <p class="description">: help the victims of the earthquake</p>
+                    </li>
+                    <li>WWDC Scholars
+                        <p class="description">: WWDC scholarship winners</p>
+                    </li>
+                    <li>Hack Chair
+                        <p class="description">: we hacked a chair</p>
+                    </li>
+                    <li>Measuring Brainwaves
+                        <p class="description">: the next dimension of technology</p>
+                    </li>
                 </ul>
             </div>
         </section>
