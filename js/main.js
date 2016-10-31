@@ -78,6 +78,6 @@ $(window).scroll(function() {
   console.log(wScroll)
 
   $('.profile').css({
-    'transform': 'translate(0px, ' + -(wScroll - 800) / 60 + '%)'
+    'transform': 'translate(0px, ' + -(wScroll - 800) / 15 + '%)'
   })
 })
