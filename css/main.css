@@ -94,10 +94,6 @@ section {
   height: 100%;
 }
 
-.main section {
-    /*overflow: hidden;*/
-}
-
 section .margins {
     margin-right: 250px;
     margin-left: 250px;
@@ -121,6 +117,7 @@ section .margins {
 .title {
     z-index: 9;
     font-weight: 800;
+    font-size: 55px;
 }
 
 .arrow {
@@ -216,6 +213,10 @@ h1.heading1 {
 
 /*PROJECTS SECTION*/
 
+.projects {
+  margin-top: -200px;
+}
+
 .projects p {
     margin-top: 0px;
     margin-bottom: 0px;
@@ -238,6 +239,11 @@ ul.description {
     display: inline-block;
 }
 
+/*BLOG SECTION*/
+
+.blog {
+  margin-top: -50px;
+}
 
 /*CONTACT SECTION*/
 
