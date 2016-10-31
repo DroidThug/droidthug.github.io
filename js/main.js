@@ -4,13 +4,13 @@ $(window).ready(function() {
     y: Math.floor(window.innerHeight / 2)
   }
 
-  var r = Snap("#rectangle");
-  var rect = r.rect(650, 200, 400, 600);
+  var r = Snap("#rectangle")
+  var rect = r.rect(650, 200, 400, 600)
   rect.attr({
     fill: "rgba(236, 240, 241, 0)",
     stroke: "#2c308c",
     strokeWidth: 15
-  });
+  })
 
   var c = Snap("#circle");
   var circle = c.circle(1125, 275, 20);
@@ -70,5 +70,14 @@ $(window).mousemove(function() {
   $('#text').css({
     'transform': 'translate(' + currentMousePos.x / 800 + '%, ' +
       -currentMousePos.y / 300 + '%)'
+  })
+})
+
+$(window).scroll(function() {
+  var wScroll = $(this).scrollTop();
+  console.log(wScroll)
+
+  $('.profile').css({
+    'transform': 'translate(0px, ' + -(wScroll - 800) / 60 + '%)'
   })
 })

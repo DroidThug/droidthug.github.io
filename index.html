@@ -6,30 +6,28 @@
     <meta charset="utf-8">
 
     <title>Nikhil D'Souza</title>
-    <meta name="description" content="The HTML5 Herald">
-    <meta name="author" content="SitePoint">
+    <meta name="description" content="Nikhil D'Souza">
+    <meta name="author" content="Nikhil D'Souza">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="icon" type="image/png" href="img/favicon.png">
 
     <link rel="stylesheet" href="css/main.css">
     <link href="css/hover.css" rel="stylesheet" media="all">
     <link href="css/onepage-scroll.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vivus/0.4.0/vivus.js"></script>
+    <script src="https://www.atlasestateagents.co.uk/javascript/tether.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js"></script>
+
     <script type="text/javascript" src="js/main.js"></script>
     <script type="text/javascript" src="js/jquery.onepage-scroll.js"></script>
     <script type="text/javascript" src="js/snap.svg.js"></script>
 
     <script>
         $(document).ready(function() {
-            $(".main").onepage_scroll({
-                sectionContainer: "section",
-                animationTime: 750,
-                loop: false,
-                keyboard: true,
-                responsiveFallback: false
-            });
-
             var a = document.getElementById("next");
             a.onclick = function() {
                 $(".main").moveTo(2);
@@ -49,25 +47,30 @@
             <svg id="line" width="100%" height="100%" viewBox="500 0 1000 1000"></svg>
             <svg id="text" width="100%" height="100%" viewBox="500 0 1000 1000"></svg>
             <div class="arrow">
-                <a href="#2" id="next" class="svg hvr-float">
+                <a href="#about" id="next" class="svg hvr-float">
                     <object class="arrow-svg" data="img/arrow.svg"></object>
                 </a>
             </div>
         </section>
 
-        <section class="about section vertical-center">
-            <div>
-                <b class="heading1"># About Me</b>
-                <br><br>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lobortis eros id consequat consectetur. Nullam non leo orci. Integer eu convallis risus, sit amet ullamcorper dolor. Nullam enim sem, sagittis non nisi ut, bibendum commodo
-                    turpis. Sed diam augue, laoreet ut cursus vitae, condimentum ac dui. Sed at sem pulvinar ligula scelerisque mattis a in eros. Pellentesque placerat purus leo, quis dapibus enim lobortis a. Curabitur blandit mauris non mi tincidunt
-                    semper. Aenean placerat turpis a nulla lacinia lobortis. Praesent lobortis vitae velit at consequat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur mollis ipsum sed tortor rutrum,
-                    quis tristique enim ultrices.</p>
+        <section class="about section vertical-center" id="about">
+            <div class="margins container-fluid">
+                <div class="row">
+                    <div class="col-md-4">
+                      <img src="img/profile.jpg" width="330" height="400" class="profile"></img>
+                    </div>
+                    <div class="col-md-8">
+                        <h1 class="heading1">About Me</h1>
+                        <br><br>
+                        <p class="body1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lobortis eros id consequat consectetur. Nullam non leo orci. Integer eu convallis risus, sit amet ullamcorper dolor. Nullam enim sem, sagittis non nisi ut, bibendum
+                            commodo turpis. Sed diam augue, laoreet ut cursus vitae, condimentum ac dui. Sed at sem pulvinar ligula scelerisque mattis a in eros.</p>
+                    </div>
+                </div>
             </div>
         </section>
 
         <section class="projects section vertical-center">
-            <div>
+            <div class="margins">
                 <b class="heading1"># Projects</b>
                 <br><br>
                 <ul class="dashed">
@@ -97,13 +100,13 @@
         </section>
 
         <section class="blog section vertical-center">
-            <div>
+            <div class="margins">
                 <b class="heading1"># Latest Blog Posts</b>
                 <p>from <a href="https://pugiblog.com" target="_blank">Pugi Blog →</a></p>
                 <br><br>
 
                 <b class="heading2">## AAR Final Wrap-Up</b>
-                <p class="description">Several months ago, I decided to take a class that would change my perception on technology and the human brain. After months of hard work and dedication, I finally finished my project. The ability to display brainwave data on a smartphone.</p>
+                <p class="description">Several months ago, I decided to take a class that would change my perception on technology and the human brain. After months of hard work and dedication, I finally finished my project: the ability to display brainwave data on a smartphone.</p>
                 <br><br>
 
                 <b class="heading2">## Logitech MX Master Review</b>
