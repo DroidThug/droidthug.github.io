@@ -80,7 +80,7 @@ html, body {
 }
 
 body {
-  overflow-x:hidden
+    overflow-x: hidden
 }
 
 .vertical-center {
@@ -90,8 +90,8 @@ body {
 }
 
 section {
-  width: 100%;
-  height: 100%;
+    width: 100%;
+    height: 100%;
 }
 
 section .margins {
@@ -189,61 +189,59 @@ svg#text {
 /*ABOUT ME*/
 
 .about {
-  position: relative;
+    position: relative;
 }
 
 h1.heading1 {
-  font-weight: 800;
-  margin-left: -50px;
-  margin-top: 35px;
+    font-weight: 800;
+    margin-left: -50px;
+    margin-top: 35px;
 }
 
 .body1 {
-  margin-left: 65px;
-  margin-top: -25px;
+    margin-left: 65px;
+    margin-top: -25px;
 }
 
 @media (max-width: 768px) {
     p {
-      margin-right: -250px;
-      margin-left: -250px;
-      font-size: 12px;
+        margin-right: -250px;
+        margin-left: -250px;
+        font-size: 12px;
     }
 }
+
 
 /*PROJECTS SECTION*/
 
 .projects {
-  margin-top: -200px;
+  margin-top: 250px;
 }
 
-.projects p {
-    margin-top: 0px;
-    margin-bottom: 0px;
-}
-
-.projects ul {
-    margin-left: -62px;
-}
-
-ul p.description {
+.projects .margins {
+    margin-right: 0px;
     margin-left: 0px;
-    padding-left: 3px;
-    opacity: 0.5;
-    display: inline-block;
+    text-align: center;
 }
 
-ul.description {
-    margin-left: 0px;
-    padding-left: 3px;
-    display: inline-block;
+.col-md-4 {
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
+
+.grey-background {
+  background-color: #ebebeb;
+  padding-top: 18%;
+  padding-bottom: 18%;
+}
+
 
 /*BLOG SECTION*/
 
 .blog {
-  margin-top: -50px;
+    margin-top: -50px;
 }
+
 
 /*CONTACT SECTION*/
 

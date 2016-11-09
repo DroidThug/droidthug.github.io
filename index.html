@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="css/main.css">
     <link href="css/hover.css" rel="stylesheet" media="all">
     <link href="css/onepage-scroll.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css">
 
@@ -22,6 +23,7 @@
     <script src="https://www.atlasestateagents.co.uk/javascript/tether.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js"></script>
 
+    <script src="js/wow.min.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
     <script type="text/javascript" src="js/jquery.onepage-scroll.js"></script>
     <script type="text/javascript" src="js/snap.svg.js"></script>
@@ -34,6 +36,8 @@
                 return false;
             }
         });
+
+        new WOW().init();
     </script>
 </head>
 
@@ -57,7 +61,7 @@
             <div class="margins container-fluid">
                 <div class="row">
                     <div class="col-md-4">
-                      <img src="img/profile.jpg" width="330" height="400" class="profile"></img>
+                        <img src="img/profile.jpg" width="330" height="400" class="profile"></img>
                     </div>
                     <div class="col-md-8">
                         <h1 class="heading1">About Me</h1>
@@ -69,36 +73,68 @@
             </div>
         </section>
 
-        <section class="projects section vertical-center">
-            <div class="margins">
-                <b class="heading1"># Projects</b>
-                <br><br>
-                <ul class="dashed">
-                    <li>Pugi Blog
-                        <p class="description">: a tech blog</p>
-                    </li>
-                    <li>Wolly
-                        <p class="description">: the new definition of volunteering</p>
-                    </li>
-                    <li>Prioritize
-                        <p class="description">: a utility to organize tasks</p>
-                    </li>
-                    <li>Help Nepal
-                        <p class="description">: help the victims of the earthquake</p>
-                    </li>
-                    <li>WWDC Scholars
-                        <p class="description">: WWDC scholarship winners</p>
-                    </li>
-                    <li>Hack Chair
-                        <p class="description">: we hacked a chair</p>
-                    </li>
-                    <li>Measuring Brainwaves
-                        <p class="description">: the next dimension of technology</p>
-                    </li>
-                </ul>
+        <section class="projects section vertical-center" id="projects">
+            <div class="margins container-fluid">
+                <div class="row">
+                    <div class="col-md-4">
+                      <a href="https://google.com">
+                        <div class="grey-background wow fadeInUp">
+                            <img src="img/projects/previews/pugiblog-preview.png" width="300"></img>
+                        </div>
+                      </a>
+                    </div>
+
+                    <div class="col-md-4">
+                      <a href="https://google.com">
+                        <div class="grey-background wow fadeInUp">
+                            <img src="img/projects/previews/wolly-preview.png" width="300"></img>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="col-md-4">
+                      <a href="https://google.com">
+                        <div class="grey-background wow fadeInUp">
+                            <img src="img/projects/previews/prioritize-preview.png" width="300"></img>
+                        </div>
+                      </a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                      <a href="https://google.com">
+                        <div class="grey-background wow fadeInUp">
+                            <img src="img/projects/previews/helpnepal-preview.png" width="300"></img>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="col-md-4">
+                      <a href="https://google.com">
+                        <div class="grey-background wow fadeInUp">
+                            <img src="img/projects/previews/scholars-preview.png" width="300"></img>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="col-md-4">
+                      <a href="https://google.com">
+                        <div class="grey-background wow fadeInUp">
+                            <img src="img/projects/previews/hackchair-preview.png" width="300"></img>
+                        </div>
+                      </a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                      <a href="https://google.com">
+                        <div class="grey-background wow fadeInUp">
+                            <img src="img/projects/previews/brainwaves-preview.png" width="300"></img>
+                        </div>
+
+                    </div>
+                </div>
             </div>
         </section>
 
+        <!--
         <section class="blog section vertical-center">
             <div class="margins">
                 <b class="heading1"># Latest Blog Posts</b>
@@ -137,7 +173,7 @@
                     </script>, made with <i style="color: red" class="fa fa-heart"></i> by Nikhil D'Souza.
                 </p>
             </div>
-        </section>
+        </section> -->
     </div>
 
 </body>
