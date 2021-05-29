@@ -11,170 +11,101 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="icon" type="image/png" href="img/favicon.png">
 
-    <link rel="stylesheet" href="css/main.css">
-    <link href="css/hover.css" rel="stylesheet" media="all">
-    <link href="css/onepage-scroll.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="css/animate.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css">
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/vivus/0.4.0/vivus.js"></script>
-    <script src="https://www.atlasestateagents.co.uk/javascript/tether.min.js"></script>
-
-    <script src="js/wow.min.js"></script>
-    <script type="text/javascript" src="js/main.js"></script>
-    <script type="text/javascript" src="js/jquery.onepage-scroll.js"></script>
-    <script type="text/javascript" src="js/snap.svg.js"></script>
-
-    <script>
-        $(document).ready(function() {
-            var a = document.getElementById("next");
-            a.onclick = function() {
-                $(".main").moveTo(2);
-                return false;
+   
+    <iframe
+      id="JotFormIFrame-211485623113448"
+      title="SLEEP PATTERN AMONG UNDERGRADUATE MEDICAL STUDENTS DURING COVID-19 PANDEMIC: A CROSS SECTIONAL STUDY"
+      onload="window.parent.scrollTo(0,0)"
+      allowtransparency="true"
+      allowfullscreen="true"
+      allow="geolocation; microphone; camera"
+      src="https://form.jotform.com/211485623113448"
+      frameborder="0"
+      style="
+      min-width: 100%;
+      height:539px;
+      border:none;"
+      scrolling="no"
+    >
+    </iframe>
+    <script type="text/javascript">
+      var ifr = document.getElementById("JotFormIFrame-211485623113448");
+      if (ifr) {
+        var src = ifr.src;
+        var iframeParams = [];
+        if (window.location.href && window.location.href.indexOf("?") > -1) {
+          iframeParams = iframeParams.concat(window.location.href.substr(window.location.href.indexOf("?") + 1).split('&'));
+        }
+        if (src && src.indexOf("?") > -1) {
+          iframeParams = iframeParams.concat(src.substr(src.indexOf("?") + 1).split("&"));
+          src = src.substr(0, src.indexOf("?"))
+        }
+        iframeParams.push("isIframeEmbed=1");
+        ifr.src = src + "?" + iframeParams.join('&');
+      }
+      window.handleIFrameMessage = function(e) {
+        if (typeof e.data === 'object') { return; }
+        var args = e.data.split(":");
+        if (args.length > 2) { iframe = document.getElementById("JotFormIFrame-" + args[(args.length - 1)]); } else { iframe = document.getElementById("JotFormIFrame"); }
+        if (!iframe) { return; }
+        switch (args[0]) {
+          case "scrollIntoView":
+            iframe.scrollIntoView();
+            break;
+          case "setHeight":
+            iframe.style.height = args[1] + "px";
+            break;
+          case "collapseErrorPage":
+            if (iframe.clientHeight > window.innerHeight) {
+              iframe.style.height = window.innerHeight + "px";
             }
-        });
-
-        new WOW().init();
-    </script>
+            break;
+          case "reloadPage":
+            window.location.reload();
+            break;
+          case "loadScript":
+            if( !window.isPermitted(e.origin, ['jotform.com', 'jotform.pro']) ) { break; }
+            var src = args[1];
+            if (args.length > 3) {
+                src = args[1] + ':' + args[2];
+            }
+            var script = document.createElement('script');
+            script.src = src;
+            script.type = 'text/javascript';
+            document.body.appendChild(script);
+            break;
+          case "exitFullscreen":
+            if      (window.document.exitFullscreen)        window.document.exitFullscreen();
+            else if (window.document.mozCancelFullScreen)   window.document.mozCancelFullScreen();
+            else if (window.document.mozCancelFullscreen)   window.document.mozCancelFullScreen();
+            else if (window.document.webkitExitFullscreen)  window.document.webkitExitFullscreen();
+            else if (window.document.msExitFullscreen)      window.document.msExitFullscreen();
+            break;
+        }
+        var isJotForm = (e.origin.indexOf("jotform") > -1) ? true : false;
+        if(isJotForm && "contentWindow" in iframe && "postMessage" in iframe.contentWindow) {
+          var urls = {"docurl":encodeURIComponent(document.URL),"referrer":encodeURIComponent(document.referrer)};
+          iframe.contentWindow.postMessage(JSON.stringify({"type":"urls","value":urls}), "*");
+        }
+      };
+      window.isPermitted = function(originUrl, whitelisted_domains) {
+        var url = document.createElement('a');
+        url.href = originUrl;
+        var hostname = url.hostname;
+        var result = false;
+        if( typeof hostname !== 'undefined' ) {
+          whitelisted_domains.forEach(function(element) {
+              if( hostname.slice((-1 * element.length - 1)) === '.'.concat(element) ||  hostname === element ) {
+                  result = true;
+              }
+          });
+          return result;
+        }
+      }
+      if (window.addEventListener) {
+        window.addEventListener("message", handleIFrameMessage, false);
+      } else if (window.attachEvent) {
+        window.attachEvent("onmessage", handleIFrameMessage);
+      }
+      </script>
 </head>
-
-<body>
-
-    <div class="main onepage-wrapper">
-        <section class="intro section vertical-center">
-            <h1 class="title">DroidThug</h1>
-            <svg id="rectangle" width="100%" height="100%" viewBox="500 0 1000 1000"></svg>
-            <svg id="circle" width="100%" height="100%" viewBox="500 0 1000 1000"></svg>
-            <svg id="line" width="100%" height="100%" viewBox="500 0 1000 1000"></svg>
-            <svg id="text" width="100%" height="100%" viewBox="500 0 1000 1000"></svg>
-            <div class="arrow">
-                <a href="#about" id="next" class="svg hvr-float">
-                    <object class="arrow-svg" data="img/arrow.svg"></object>
-                </a>
-            </div>
-        </section>
-
-        <section class="about section vertical-center" id="about">
-            <div class="margins container-fluid">
-                <div class="row">
-                    <div class="col-md-4">
-                        <img src="img/profile.jpg" width="330" height="400" class="profile"></img>
-                    </div>
-                    <div class="col-md-8">
-                        <h1 class="heading1">About Me</h1>
-                        <br><br>
-                        <p class="body1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lobortis eros id consequat consectetur. Nullam non leo orci. Integer eu convallis risus, sit amet ullamcorper dolor. Nullam enim sem, sagittis non nisi ut, bibendum
-                            commodo turpis. Sed diam augue, laoreet ut cursus vitae, condimentum ac dui. Sed at sem pulvinar ligula scelerisque mattis a in eros.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="projects section vertical-center" id="projects">
-            <div class="margins container-fluid">
-                <div class="row">
-                    <div class="col-md-4">
-                      <a href="https://google.com">
-                        <div class="grey-background wow fadeInUp">
-                            <img src="img/projects/previews/pugiblog-preview.png" width="300"></img>
-                        </div>
-                      </a>
-                    </div>
-
-                    <div class="col-md-4">
-                      <a href="https://google.com">
-                        <div class="grey-background wow fadeInUp">
-                            <img src="img/projects/previews/wolly-preview.png" width="300"></img>
-                        </div>
-                      </a>
-                    </div>
-                    <div class="col-md-4">
-                      <a href="https://google.com">
-                        <div class="grey-background wow fadeInUp">
-                            <img src="img/projects/previews/prioritize-preview.png" width="300"></img>
-                        </div>
-                      </a>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-4">
-                      <a href="https://google.com">
-                        <div class="grey-background wow fadeInUp">
-                            <img src="img/projects/previews/helpnepal-preview.png" width="300"></img>
-                        </div>
-                      </a>
-                    </div>
-                    <div class="col-md-4">
-                      <a href="https://google.com">
-                        <div class="grey-background wow fadeInUp">
-                            <img src="img/projects/previews/scholars-preview.png" width="300"></img>
-                        </div>
-                      </a>
-                    </div>
-                    <div class="col-md-4">
-                      <a href="https://google.com">
-                        <div class="grey-background wow fadeInUp">
-                            <img src="img/projects/previews/hackchair-preview.png" width="300"></img>
-                        </div>
-                      </a>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-4">
-                      <a href="https://google.com">
-                        <div class="grey-background wow fadeInUp">
-                            <img src="img/projects/previews/brainwaves-preview.png" width="300"></img>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!--
-        <section class="blog section vertical-center">
-            <div class="margins">
-                <b class="heading1"># Latest Blog Posts</b>
-                <p>from <a href="https://pugiblog.com" target="_blank">Pugi Blog →</a></p>
-                <br><br>
-
-                <b class="heading2">## AAR Final Wrap-Up</b>
-                <p class="description">Several months ago, I decided to take a class that would change my perception on technology and the human brain. After months of hard work and dedication, I finally finished my project: the ability to display brainwave data on a smartphone.</p>
-                <br><br>
-
-                <b class="heading2">## Logitech MX Master Review</b>
-                <p class="description">A few months ago, Logitech added a new mouse to their MX series. The Logitech MX Master. This advanced mouse packs several new features that makes this one of the best mice on the market.</p>
-                <br><br>
-
-                <b class="heading2">## What is a Raspberry Pi?</b>
-                <p class="description">In today’s market a decent laptop or desktop costs around $1000. But there is a computer for only $30! A Raspberry Pi is a small computer that is the size of a credit card.</p>
-            </div>
-        </section>
-
-        <section class="contact section vertical-center">
-            <p>
-                <div class="media">
-                    <a href="https://www.linkedin.com/in/nikhiljay7" target="_blank"><i class="fa fa-linkedin"></i></a>
-                    <a href="https://github.com/nikhiljay" target="_blank"><i class="fa fa-github"></i></a>
-                    <a href="mailto:nikhil@nikhiljay.com"><i class="fa fa-envelope"></i></a>
-                    <a href="https://twitter.com/nikhiljay7" target="_blank"><i class="fa fa-twitter"></i></a>
-                </div>
-
-
-            </p>
-            <div class="copyright">
-                <p>
-                    ©
-                    <script>
-                        document.write(new Date().getFullYear())
-                    </script>, made with <i style="color: red" class="fa fa-heart"></i> by Nikhil D'Souza.
-                </p>
-            </div>
-        </section> -->
-    </div>
-
-</body>
-
-</html>
